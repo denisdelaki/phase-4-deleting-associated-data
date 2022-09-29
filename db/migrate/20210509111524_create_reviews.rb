@@ -5,7 +5,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.string :comment
       t.integer :rating
       t.belongs_to :dog_house, null: false, foreign_key: true
-
+      
       t.timestamps
     end
   end
